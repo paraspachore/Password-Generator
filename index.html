@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,59 @@
     <title>Password Generator</title>
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="wrapper">
+            <div class="input_box">
+                <input type="text" value="cuqwi13o8ruu428rh4wo" disabled>
+                <span class="material-symbols-rounded">copy_all</span>
+            </div>
+            <div class="pass_indicator"></div>
+            <div class="pass_length">
+                <div class="details">
+                    <label for="pass_length" class="title">Password Length</label>
+                    <span>15</span>
+                </div>
+                <input type="range" min="1" max="32" step="1">
+            </div>
+            <div class="pass_settings">
+                <label for="pass_settings">Password Settings</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" id="lowerCase">
+                        <label for="lowerCase">Lowercase (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Uppercase (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Numbers (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Symbols (!-$^+)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="exc_duplicate">
+                        <label for="exc_duplicate">Exclude Duplicate</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="spaces">
+                        <label for="spaces">Include spaces</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="generate-btn">Generate Password</button>
+        </div>
+    </div>
 </body>
+
 </html>
