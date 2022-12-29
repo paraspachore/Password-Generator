@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -25,15 +25,15 @@
             <div class="pass_length">
                 <div class="details">
                     <label for="pass_length" class="title">Password Length</label>
-                    <span>15</span>
+                    <span></span>
                 </div>
-                <input type="range" min="1" max="32" value="15" step="1">
+                <input type="range" min="4" max="16" value="15" step="1">
             </div>
             <div class="pass_settings">
                 <label for="pass_settings">Password Settings</label>
                 <ul class="options">
                     <li class="option">
-                        <input type="checkbox" id="lowerCase">
+                        <input type="checkbox" id="lowerCase" checked>
                         <label for="lowerCase">Lowercase (a-z)</label>
                     </li>
                     <li class="option">
@@ -46,7 +46,7 @@
                     </li>
                     <li class="option">
                         <input type="checkbox" id="symbols">
-                        <label for="symbols">Symbols (!-$^+)</label>
+                        <label for="symbols">Symbols (!@#$)</label>
                     </li>
                     <li class="option">
                         <input type="checkbox" id="exc_duplicate">
