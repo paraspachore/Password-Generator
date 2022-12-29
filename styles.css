@@ -46,7 +46,7 @@ body{
     font-size: 1.1rem;
     font-weight: 500;
     border-radius: 4px;
-    border-bottom: 1px solid #aaa;
+    border: 1px #aaa solid;
     padding: 0 2rem 0 1rem;
 }
 
