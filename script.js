@@ -6,18 +6,24 @@ const characters = { //object of letters, numbers, symbols
     lowercase:"abcdefghijklmnopqrstuvwxyz",
     uppercase:"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     numbers:"0123456789",
-    symbols:"`~!@#$%^&*_"
+    symbols:"`~!@#$%^&*_",
+    spaces:"    "
 }
 
 const generatePassword = ()=> {
     let staticPassword = "",
     randomPassword = "",
+    excludeDuplicate = false,
     passLength = lengthSlider.value;
 
     options.forEach(option => { //looping through each option's checkbox
         if(option.checked){ //if checkbox is checked
-            //adding particular key value from character object to staticPassword
-            staticPassword += characters[option.id];
+            if(option.id !== "exc_duplicate"){
+                //adding particular key value from character object to staticPassword
+                staticPassword += characters[option.id];
+            } else{
+                excludeDuplicate = true;
+            }
         }
     });
 

@@ -31,10 +31,15 @@ body{
 }
 
 .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1.75rem;
 }
 
 .wrapper .input_box{
+    width: 100%;
     position: relative;
 }
 
@@ -77,10 +82,12 @@ body{
 }
 
 .wrapper .pass_length{
+    width: 100%;
     margin: 1.5rem 0 1.2rem;
 }
 
 .pass_length .details{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -127,8 +134,8 @@ body{
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    color: antiquewhite;
-    background-color: cadetblue;
+    color: white;
+    background-color: #5f767c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
