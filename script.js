@@ -58,3 +58,12 @@ updateSlider();
 
 lengthSlider.addEventListener("input", updateSlider);
 generateBtn.addEventListener("click", generatePassword);
+
+function cpyClip() {
+    var copyText = document.getElementById("passIn");
+
+    copyText.ariaSelected();
+    copyText.setSelectionRange(0,99999);
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied!");
+}
